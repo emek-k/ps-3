@@ -4,13 +4,17 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/task_item_name"/>
+        android:id="@+id/task_item_name"
+        android:background="#DD0B0B"
+        android:padding="5px"/>
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/task_item_date"/>
+        android:id="@+id/task_item_date"
+        android:background="#D8FF00"
+        android:padding="5px"/>
 
 </LinearLayout>

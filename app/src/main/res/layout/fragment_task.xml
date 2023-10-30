@@ -4,8 +4,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_margin="20dp"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
     <TextView
         style="?android:listSeparatorTextViewStyle"

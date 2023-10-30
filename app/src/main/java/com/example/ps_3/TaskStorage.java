@@ -7,8 +7,7 @@ import java.util.UUID;
 public class TaskStorage {
 
     private static final TaskStorage taskStorage = new TaskStorage();
-    //maybe tasks should be final ???
-    private List<Task> tasks;
+    private final List<Task> tasks;
 
     public static TaskStorage getInstace(){
         return taskStorage;
@@ -28,8 +27,8 @@ public class TaskStorage {
         return tasks;
     }
 
-    public void setTasks(List<Task> tasks) {
-        this.tasks = tasks;
+    public void addTask(Task task){
+        tasks.add(task);
     }
 
     public Task getTask(UUID id){

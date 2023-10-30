@@ -3,3 +3,19 @@
 ,app/src/main/java/com/example/ps_3/Task.java,4/0/4067872021c3a1f9e13f26c81a3d8a83b5dd1bae
 d
 4app/src/main/java/com/example/ps_3/TaskFragment.java,e/6/e6806816cbd6eb94cdc28067d42c92c5c8d37d84
+n
+>app/src/main/java/com/example/ps_3/SingleFragmentActivity.java,4/5/45200ccf7870b5840e4c6bbc744e98829c9b3777
+P
+ app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
+@
+build.gradle.kts,d/b/dbcff70658daf80b53ce624f6adcaa529df5ed8d
+D
+app/build.gradle.kts,d/2/d2a4383452aad84a18429a5844d31330a012a9e6
+c
+3app/src/main/java/com/example/ps_3/TaskStorage.java,3/4/340b25dcb3248ed02a3dd3e738ae59e03866458e
+d
+4app/src/main/java/com/example/ps_3/MainActivity.java,5/8/581479bb18d1a21ef0e8940c39fb27893d026fd9
+h
+8app/src/main/java/com/example/ps_3/TaskListActivity.java,a/4/a4e405f9b96b1a7d44fe35cc6da7c6a9cac1b0f0
+h
+8app/src/main/java/com/example/ps_3/TaskListFragment.java,a/1/a1f626950ab7e0619d7b2b7dd57ef382f01ef930

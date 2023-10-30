@@ -20,13 +20,17 @@ import java.util.List;
 
 public class TaskListFragment extends Fragment {
 
+    private RecyclerView recyclerView;
+    private TaskAdapter adapter;
     public static final String KEY_EXTRA_TASK_ID = "extra_task_id";
+
+    public TaskListFragment(){}
 
     private class TaskHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
         private Task task;
-        TextView nameTextView;
-        TextView dateTextView;
+        private TextView nameTextView;
+        private TextView dateTextView;
         public TaskHolder(LayoutInflater inflater, ViewGroup parent){
             super(inflater.inflate(R.layout.list_item_task, parent, false));
             itemView.setOnClickListener(this);
@@ -80,8 +84,6 @@ public class TaskListFragment extends Fragment {
         TaskStorage taskStorage = TaskStorage.getInstace();
         List<Task> tasks = taskStorage.getTasks();
 
-
-
         if(adapter == null) {
             adapter = new TaskAdapter(tasks);
             recyclerView.setAdapter(adapter);
@@ -94,12 +96,9 @@ public class TaskListFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_task_list, container, false);
-        RecyclerView recyclerView = view.findViewById(R.id.task_recycler_view);
+        recyclerView = view.findViewById(R.id.task_recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
-        TaskAdapter adapter = null;
-
-        //return super.onCreateView(inflater, container, savedInstanceState);
         updateView();
         return view;
     }
